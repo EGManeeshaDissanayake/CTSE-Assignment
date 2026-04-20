@@ -22,14 +22,14 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@v2
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        with:
-          args: >
-            -Dsonar.projectKey=EGManeeshaDissanayake_CTSE-Assignment
-            -Dsonar.organization=egmaneeshadissanayake
+      # - name: SonarCloud Scan
+      #   uses: SonarSource/sonarcloud-github-action@v2
+      #   env:
+      #     # SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+      #   with:
+      #     args: >
+      #       -Dsonar.projectKey=EGManeeshaDissanayake_CTSE-Assignment
+      #       -Dsonar.organization=egmaneeshadissanayake
 
       - name: Login to ACR
         uses: docker/login-action@v3
